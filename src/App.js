@@ -1,9 +1,12 @@
 import { useEffect } from 'react';
 import './App.css';
+import { useTelegram } from './hooks/useTelegram';
+ 
 const token="1450164197:AAFqvV6DHugvks5889prhHZvzAid-kBa_8I";
 
-
 function App() {
+
+  const {onToggleButton,tg}=useTelegram()
 
   useEffect(()=>{
   tg.ready()
@@ -13,8 +16,7 @@ function App() {
 
   return (
     <div className="App">
-     chat
-     <button onClick={onClose}>close</button>
+     <button onClick={onToggleButton}>toggle</button>
     </div>
   );
 }
