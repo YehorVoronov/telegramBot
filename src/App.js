@@ -1,7 +1,5 @@
 import { useEffect } from 'react';
 import './App.css';
-const tg=window.Telegram.WebApp;
-
 const token="1450164197:AAFqvV6DHugvks5889prhHZvzAid-kBa_8I";
 
 
@@ -11,9 +9,7 @@ function App() {
   tg.ready()
   },[])
 
-  const onClose=()=>{
-    tg.close()
-  }
+  
 
   return (
     <div className="App">
