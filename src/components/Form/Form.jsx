@@ -70,6 +70,9 @@ const Form = () => {
         <option value={'physical'}>physical</option>
         <option value={'legal'}>legal</option>
       </select>
+
+      <div draggable="true" style={{border: "3px solid #666", 
+  padding: "10px",cursore:"move"}}>draggable</div>
     </div>
   )
 }
